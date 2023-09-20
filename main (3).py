@@ -1,5 +1,18 @@
-year=int(input("enter the year to be checked:"))
-if(year%4==0 and year%100!=9 or year%400==0):
-  print("the year is a leap year!")
-else:
-  print("the year isn't a leap year!")
+# Define the Player class
+class Player: 
+   def play(self):
+    print("The player is playing cricket.") 
+    # Define the Batsman class, derived from Player 
+class Batsman(Player):
+   def play(self):
+    print("The batsman is batting.") 
+  # Define the Bowler class, derived from Player 
+class Bowler(Player):
+  def play(self):
+    print("The bowler is bowling.") 
+  # Create objects of Batsman and Bowler classe
+batsman = Batsman() 
+bowler = Bowler()
+# Call the play()method for each object
+batsman.play() 
+bowler.play()
